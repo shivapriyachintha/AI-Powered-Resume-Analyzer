@@ -7,7 +7,7 @@ def navigate_to_page(page_name: str):
     st.query_params["page"] = page_name
 
 # Google Gemini API
-genai.configure(api_key="AIzaSyAAG8EzzrDICfXJTyVT_PBAeTdFcQDHqGs")  
+genai.configure(api_key="YOUR API KEY")  
 
 def get_gemini_response(prompt, pdf_content, jd):
     model = genai.GenerativeModel('gemini-2.5-flash')
